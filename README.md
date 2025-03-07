@@ -71,11 +71,11 @@ python3 gen_judgement.py --model Pixtral-12B-2409 --model-answer-file output/Pix
 
 3.  Display Results
 ```shell
-export base_url=??? # Configuring a gpt-4o judge.
-export api_key=???
-python3 show_result.py --model Pixtral-12B-2409--model-answer-file output/Pixtral.jsonl --judgement-file output/Pixtral --track singleround
-python3 show_result.py --model Pixtral-12B-2409--model-answer-file output/Pixtral.jsonl --judgement-file output/Pixtral --track multi-round
-python3 show_result.py --model Pixtral-12B-2409--model-answer-file output/Pixtral.jsonl --judgement-file output/Pixtral --track multi-linguistic
+for track in singleround multi-round multi-linguistic
+do
+    python3 show_result.py --model Pixtral-12B-2409--model-answer-file output/Pixtral.jsonl --judgement-file output/Pixtral --track $track
+done
+
 ```
 Additional settings allow evaluation based on: 
 - chanllenge level
