@@ -82,6 +82,7 @@ Additional settings allow evaluation based on:
 - question type
 - image type. 
 - more...
+
 We encourage users to explore and customize their evaluations.
 
 
