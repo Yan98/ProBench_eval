@@ -26,13 +26,13 @@
     
     
 <h2>Introduction</h2> 
- Our ProBench spans 10 task fields and 56 sub-fields, supports 17 languages, and supports conversations with up to 13 conversation turns. 
+Our ProBench spans 10 task fields and 56 sub-fields, supports 17 languages, and supports conversations with up to 13 conversation turns. 
 <div style="width: 80%; text-align: center; margin:auto;">
       <img style="width: 80%" src="assets/img/distribution.png">
 </div> 
 
 <h2>Example</h2> 
-The ProBench highlights open-ended expert tasks. Here are examples:
+ProBench focuses on open-ended expert tasks. Here are sample evaluations:
 <div style="width: 80%; text-align: center; margin:auto;">
       <img style="width: 80%" src="assets/img/example.png">
 </div> 
@@ -53,23 +53,23 @@ pip install -e .
 
 ## [Custom Use] Evaluating on Probench
 
-We encourage users to customizes the models in `gen_answer_vllm.py`. Here, we provided a sample class of `Pixtral-12B-2409` and `QwenQwen2-VL-7B-Instruct"`.
+We encourage users to customize models in `gen_answer_vllm.py`. Currently, we provide examples for `Pixtral-12B-2409` and `QwenQwen2-VL-7B-Instruct"`.
 
-1. Generating MLLM outputs.
+1. Generating MLLM outputs
 
 ```shell
 python3 gen_answer_vllm.py --model Pixtral-12B-2409 --save-name Pixtral 
 ```
 
-2. Running judgements.
-
+2. Running judgements
+Configure GPT-4o as the evaluation judge:
 ```shell
-export base_url=??? # Configuring a gpt-4o judge.
+export base_url=???
 export api_key=???
 python3 gen_judgement.py --model Pixtral-12B-2409 --model-answer-file output/Pixtral.jsonl --judge_model gpt-4o-2024-08-06 --num_workers 64 
 ```
 
-3. Show Results.
+3.  Display Results
 ```shell
 export base_url=??? # Configuring a gpt-4o judge.
 export api_key=???
@@ -77,7 +77,12 @@ python3 show_result.py --model Pixtral-12B-2409--model-answer-file output/Pixtra
 python3 show_result.py --model Pixtral-12B-2409--model-answer-file output/Pixtral.jsonl --judgement-file output/Pixtral --track multi-round
 python3 show_result.py --model Pixtral-12B-2409--model-answer-file output/Pixtral.jsonl --judgement-file output/Pixtral --track multi-linguistic
 ```
-There are various settings, e.g., evaluating on specific chanllenge level, question type, image type. We encourage the user to explore.
+Additional settings allow evaluation based on: 
+- chanllenge level
+- question type
+- image type. 
+- more...
+We encourage users to explore and customize their evaluations.
 
 
 ## Contact
