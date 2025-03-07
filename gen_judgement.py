@@ -220,8 +220,3 @@ if __name__ == "__main__":
             print(f"Skip {skip} unfounded model outputs...")
             for future in as_completed(all_tasks):
                 future.result()
-'''
-python3 gen_judgement.py --model qwen2vl --model-answer-file dummy_test_data/Qwen2VL.jsonl --judge_model gpt-4o-2024-08-06 --num_workers 2 --dummy_check 2
-python3 gen_judgement.py --model gpt-4o-mini --model-answer-file dummy_test_data/gpt-4o-mini.jsonl --judge_model gpt-4o-2024-08-06 --num_workers 2 --dummy_check 2
-python3 gen_judgement.py --model Pixtral --model-answer-file dummy_test_data/Pixtral.jsonl --judge_model gpt-4o-2024-08-06 --num_workers 2 --dummy_check 2
-'''

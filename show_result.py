@@ -343,8 +343,3 @@ Processing dataset and extracting relevant information...
         args.num_rounds,
     )
 
-'''
-python3 show_result.py --model qwenvl2.57B --model-answer-file dummy_test_data/Qwen2VL.jsonl --judgement-file dummy_test_data/Qwen2VL --track singleround
-python3 show_result.py --model gptmini --model-answer-file dummy_test_data/gpt-4o-mini.jsonl --judgement-file dummy_test_data/gpt-4o-mini --track multi-round
-python3 show_result.py --model pixtral --model-answer-file dummy_test_data/Pixtral.jsonl --judgement-file dummy_test_data/Pixtral --track multi-linguistic
-'''

@@ -182,7 +182,3 @@ if __name__ == "__main__":
             break
     print(f"Answer for {args.model} is finished")
 
-'''
-CUDA_VISIBLE_DEVICES=1 python3 gen_answer_vllm.py --model Pixtral-12B-2409 --save-name Pixtral --dummy_check 2
-CUDA_VISIBLE_DEVICES=1 python3 gen_answer_vllm.py --model Qwen/Qwen2-VL-7B-Instruct --save-name Qwen2VL --dummy_check 2
-'''
