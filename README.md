@@ -90,6 +90,11 @@ We encourage users to explore and customize their evaluations.
 
 Please contact `yan.yang@anu.edu.au` for any queries.
 
+## Acknowledgement
+
+This repository is built using the [arena-hard-auto](https://github.com/lmarena/arena-hard-auto/tree/main) repository.
+
+
 ## License
 
 This dataset follows CC-BY-NC-SA 4.0 license. Please use this dataset for non-commercial use ONLY.
