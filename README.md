@@ -4,10 +4,11 @@
     
 <div style="width: 35%; text-align: center; margin:auto;">
       <img style="width: 35%" src="assets/img/logo.png">
-</div> 
+</div>
+<br>
 
   <div>
-      <a href="https://scholar.google.com/citations?user=IF0xw34AAAAJ&hl" target="_blank">Yan Yang</a>
+      <a href="https://scholar.google.com/citations?user=IF0xw34AAAAJ&hl" target="_blank">Yan Yang</a>,
       <a href="https://scholar.google.com/citations?user=h5XtaUUAAAAJ" target="_blank">Dongxu Li</a>,
       <a href="https://scholar.google.com.hk/citations?user=wth-VbMAAAAJ" target="_blank">Haoning Wu</a>,
       <a href="https://scholar.google.com/citations?user=Po65v_MAAAAJ" target="_blank">Bei Chen</a>,
@@ -22,11 +23,10 @@
 <div>
    <a href="https://huggingface.co/datasets/HelloKKMe/ProBench"><strong>Dataset on HuggingFace</strong></a>  | <a href="https://yan98.github.io/ProBench/"><strong>Homepage</strong></a> | <a href="https://yan98.github.io/ProBench/index.html#leaderboard"><strong> Leaderboard</strong></a> |  <a href="https://arxiv.org/pdf/2503.06885"><strong>ArXiv</strong></a>
    </div>   
-    
-    
+</div>
     
 <h2>Introduction</h2> 
-Our ProBench spans 10 task fields and 56 sub-fields, supports 17 languages, and supports conversations with up to 13 conversation turns. 
+Solving expert-level multimodal tasks is a key milestone towards general intelligence. As the capabilities of multimodal large language models (MLLMs) continue to improve, evaluation of such advanced multimodal intelligence becomes necessary yet challenging. To this end, we introduce ProBench, a benchmark that contains <b> open-ended multimodal queries that require intensive expert-level knowledge to solve </b>. ProBench contains 10 task fields and 56 sub-fields, supports 17 languages, and supports conversations with up to 13 conversation turns. 
 <div style="width: 80%; text-align: center; margin:auto;">
       <img style="width: 80%" src="assets/img/distribution.png">
 </div> 
@@ -64,8 +64,8 @@ python3 gen_answer_vllm.py --model Pixtral-12B-2409 --save-name Pixtral
 2. Running judgements
 Configure GPT-4o as the evaluation judge:
 ```shell
-export base_url=???
-export api_key=???
+export base_url=YOUR_BASE_URL
+export api_key=YOUR_API_KEY
 python3 gen_judgement.py --model Pixtral-12B-2409 --model-answer-file output/Pixtral.jsonl --judge_model gpt-4o-2024-08-06 --num_workers 64 
 ```
 
