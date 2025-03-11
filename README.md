@@ -62,18 +62,18 @@ python3 gen_answer_vllm.py --model Pixtral-12B-2409 --save-name Pixtral
 ```
 
 2. Running judgements
-Configure GPT-4o as the evaluation judge:
+Configuring GPT-4o as the evaluation judge:
 ```shell
 export base_url=YOUR_BASE_URL
 export api_key=YOUR_API_KEY
 python3 gen_judgement.py --model Pixtral-12B-2409 --model-answer-file output/Pixtral.jsonl --judge_model gpt-4o-2024-08-06 --num_workers 64 
 ```
 
-3.  Display Results
+3.  Displaying Results
 ```shell
 for track in singleround multi-round multi-linguistic
 do
-    python3 show_result.py --model Pixtral-12B-2409--model-answer-file output/Pixtral.jsonl --judgement-file output/Pixtral --track $track
+    python3 show_result.py --model Pixtral-12B-2409 --model-answer-file output/Pixtral.jsonl --judgement-file output/Pixtral --track $track
 done
 
 ```
