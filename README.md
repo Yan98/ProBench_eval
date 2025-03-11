@@ -20,7 +20,7 @@
 
     
 <div>
-   <a href="https://huggingface.co/datasets/HelloKKMe/ProBench"><strong>Dataset on HuggingFace</strong></a>  | <a href="https://yan98.github.io/ProBench/"><strong>Homepage</strong></a> | <a href="https://yan98.github.io/ProBench/index.html#leaderboard"><strong> Leaderboard</strong></a> |  <a href="xxx"><strong>ArXiv</strong></a>
+   <a href="https://huggingface.co/datasets/HelloKKMe/ProBench"><strong>Dataset on HuggingFace</strong></a>  | <a href="https://yan98.github.io/ProBench/"><strong>Homepage</strong></a> | <a href="https://yan98.github.io/ProBench/index.html#leaderboard"><strong> Leaderboard</strong></a> |  <a href="https://arxiv.org/pdf/2503.06885"><strong>ArXiv</strong></a>
    </div>   
     
     
@@ -102,6 +102,13 @@ This dataset follows CC-BY-NC-SA 4.0 license. Please use this dataset for non-co
 ## Citation
 
 ```bibtex
-@misc{tbc,
+@misc{yang2025probenchjudgingmultimodalfoundation,
+      title={ProBench: Judging Multimodal Foundation Models on Open-ended Multi-domain Expert Tasks}, 
+      author={Yan Yang and Dongxu Li and Haoning Wu and Bei Chen and Liu Liu and Liyuan Pan and Junnan Li},
+      year={2025},
+      eprint={2503.06885},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.06885}, 
 }
 ```
